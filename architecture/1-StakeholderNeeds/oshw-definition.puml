@@ -1,0 +1,7 @@
+@startuml
+
+!startsub OSHWDEFINITION
+object "OSHW projects should be developed and shared\nin accordance to https://www.oshwa.org/definition" as oshwdefinition <<stakeholder need>>
+!endsub
+
+@enduml

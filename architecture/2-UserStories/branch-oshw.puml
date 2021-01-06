@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+!startsub BRANCHOSHW
+rectangle "Branch OSHW" as branchoshw <<user story>> {
+  actor "OSHW Developer" as role
+
+  usecase (use branches in the development of OSHW) as behavior
+  note top of behavior : Creating a v1 branch to preserve and maintain v1 source,\nas part of OSHW certification compliance.\nNew development can then happen on trunk or a v2 branch.
+
+  usecase (modify the project source in parallel lines of development) as rationale
+
+  role --> behavior : wants to
+  behavior +.. rationale : so that he/she/they can
+}
+!endsub
+
+@enduml

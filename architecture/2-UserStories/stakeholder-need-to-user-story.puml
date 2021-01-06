@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+allow_mixing
+
+!includesub ../1-StakeholderNeeds/oshw-definition.puml!OSHWDEFINITION
+!includesub branch-oshw.puml!BRANCHOSHW
+
+oshwdefinition <.. branchoshw : <<trace>>
+@enduml
